@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pampering Prantika 💖</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/8fd2d66b7b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="wrapper">
+    <!-- Decorative Icons (add all your icon image files) -->
+    <img src="IMG-20250809-WA0005.jpg" class="decor balloon-one" alt="">
+    <img src="IMG-20250809-WA0006.jpg" class="decor balloon-two" alt="">
+    <img src="IMG-20250809-WA0007.jpg" class="decor heart-splash" alt="">
+    <img src="IMG-20250809-WA0000.jpg" class="decor flower" alt="">
+    <img src="IMG-20250809-WA0003.jpg" class="decor party-hat" alt="">
+    <img src="IMG-20250809-WA0008.jpg" class="decor small-heart" alt="">
+    <img src="IMG-20250809-WA0009.jpg" class="decor love-stamp" alt="">
+    <img src="IMG-20250809-WA0001.jpg" class="decor smiley" alt="">
+    <img src="IMG-20250809-WA0002.jpg" class="decor arrow-heart" alt="">
+
+    <!-- Opening Heartfelt Greeting -->
+    <div class="heart-greeting">
+      <span>Dear Prantika 🌸,</span>
+      <p>
+        This page is a gentle hug, a whisper to your soul, and a celebration of the magic you bring—especially in moments that feel tough. Here, every image, every color, every word sings just for you.
+      </p>
+    </div>
+
+    <!-- Title Section -->
+    <div class="title">
+      <span><img src="IMG-20250809-WA0000.jpg" class="inline-flower" alt=""></span>
+      <div class="happy"><span>Hey Prantika 💐</span></div>
+      <div class="birthday"><span>You Deserve Comfort & Love 💖</span></div>
+    </div>
+
+    <!-- Love Affirmation Sticky Note -->
+    <div class="sticky-note">
+      <span>💖</span>
+      <p>
+        You are never alone in your struggles.<br>
+        Your smile brightens my world.<br>
+        Your voice is my comfort.<br>
+        Your happiness is my wish.<br>
+        I love you beyond words, beyond limits—always.
+      </p>
+    </div>
+
+    <!-- Photo Gallery -->
+    <div class="photo-gallery">
+      <div class="photo-frame">
+        <img src="IMG-20250809-WA0012.jpg" alt="Prantika under evening sky">
+        <div class="caption">Gorgeous Prantika, singing with a smile 🌸</div>
+      </div>
+      <div class="photo-frame">
+        <img src="IMG-20250809-WA0011.jpg" alt="Prantika with rainbow background">
+        <div class="caption">Her magical day with a rainbow ✨🌈</div>
+      </div>
+    </div>
+
+    <!-- Singing Video Gallery -->
+    <div class="video-gallery">
+      <div class="video-frame">
+        <iframe src="https://drive.google.com/file/d/1OTThrjT2fgoKbzQ-4l8TixAlsSsLdt1N/preview" width="400" height="240" allow="autoplay"></iframe>
+        <div class="caption">Prantika’s soulful performance 🎙️✨</div>
+      </div>
+
+      <div class="video-frame">
+        <iframe src="https://drive.google.com/file/d/1OZjxJxHprKz2CbolQ7nZwbRWqKBqSxxJ/preview" width="400" height="240" allow="autoplay"></iframe>
+        <div class="caption">Melody from the heart 💖🎶</div>
+      </div>
+
+      <div class="video-frame">
+        <iframe src="https://drive.google.com/file/d/1OQl5yiof4AKPq-rU4dRj2XyW3WHr7bSr/preview" width="400" height="240" allow="autoplay"></iframe>
+        <div class="caption">Your magical singing moment 🌸🎵</div>
+      </div>
+    </div>
+
+    <!-- Pop-up Letter -->
+    <div class="box__letter">
+      <div class="letter__border">
+        <div class="close"><i class="fa-solid fa-xmark"></i></div>
+        <div class="letter">
+          <div class="title__letter">
+            To My Beautiful Girl 💕 <i class="fa-solid fa-heart"></i>
+          </div>
+          <div class="content__letter">
+            <div class="left">
+              <img id="heart__letter" src="heart.png" alt="Heart">
+              <div class="heart heart_1">❤️</div>
+              <div class="heart heart_2">💗</div>
+              <div class="heart heart_3">💞</div>
+              <div class="heart heart_4">💕</div>
+            </div>
+            <div class="right">
+              <div class="text__letter">
+                Hey my dearest Prantika 💖,<br><br>
+                I know these days can be tough 😔, but I want you to remember that you’re strong, beautiful, and deeply loved 💐.  
+                I’m here to pamper you, to make you smile, and to remind you that cramps and mood swings don’t stand a chance against our love 🫂💞.  
+                So take it easy 💆‍♀️, sip some hot chocolate ☕, wrap yourself in a cozy blanket 🛋️, and let me spoil you with laughter, care, and endless hugs 🤗❤️.  
+                You are my comfort, my happiness, my everything 💍✨.
+                <br><br>Always yours,<br>💌 Your Love ❤️
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Final Message -->
+    <div class="final-message">
+      <p>
+        On your toughest days and your brightest, I am always here—with love, music, and comfort.<br>
+        Thank you for being my inspiration, my love song, and my everything.<br>
+        You are powerful, graceful, and adored.<br>
+        <span class="hug-emoji">🤗💗</span>
+      </p>
+    </div>
+
+    <footer id="copy">
+      <p>Made with ❤️ for Prantika by Me</p>
+    </footer>
+  </div>
+
+  <!-- Heart Rain Animation -->
+  <div id="heart-rain"></div>
+  <script>
+    // Pop-up Letter logic
+    const letterBox = document.querySelector(".box__letter");
+    const openBtn = document.querySelector("#btn__letter");
+    const closeBtn = document.querySelector(".close");
+
+    if(openBtn && letterBox && closeBtn){
+      openBtn.addEventListener("click", () => {
+        letterBox.style.display = "block";
+        document.querySelector(".letter__border").style.display = "block";
+      });
+      closeBtn.addEventListener("click", () => {
+        letterBox.style.display = "none";
+        document.querySelector(".letter__border").style.display = "none";
+      });
+    }
+
+    // Heart Rain
+    const heartRain = document.getElementById('heart-rain');
+    for(let i=0;i<36;i++){
+      const h = document.createElement("span");
+      h.innerText = ["💕","💖","💗","❤️"][Math.floor(Math.random()*4)];
+      h.style.position = 'absolute';
+      h.style.left = (Math.random()*100) + 'vw';
+      h.style.top = (Math.random()*96) + 'vh';
+      h.style.fontSize = (1 + Math.random()*2) + 'rem';
+      h.style.opacity = 0.36 + Math.random()*0.44;
+      h.style.pointerEvents = "none";
+      heartRain.appendChild(h);
+    }
+    heartRain.style.position="fixed";
+    heartRain.style.top=0;
+    heartRain.style.left=0;
+    heartRain.style.zIndex=0;
+    heartRain.style.width="100vw";
+    heartRain.style.height="100vh";
+  </script>
+</body>
+</html>
